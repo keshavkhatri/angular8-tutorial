@@ -60,4 +60,8 @@ export class AddComponent implements OnInit {
             }
         )
     }
+
+    onDestroy(){
+        this.modalService.onHide.unsubscribe();
+    }
 }

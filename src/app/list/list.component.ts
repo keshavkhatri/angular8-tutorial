@@ -22,7 +22,7 @@ export class ListComponent implements OnInit {
     getAllEmp() {
         this.api.getEmployees().subscribe(
             (data:Array<any>) => {
-                this.employees = data.slice(10,52);
+                this.employees = data.slice(0,52);
                 this.loading = false;
             },
             (error)=>{
