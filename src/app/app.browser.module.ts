@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -12,30 +12,18 @@ import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { NavComponent } from './nav/nav.component';
 import { UpdateComponent } from './update/update.component';
-import { CommonModule } from '@angular/common';
-import { TransferHttpCacheModule } from '@nguniversal/common';
-import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { AppModule } from './app.module';
 @NgModule({
-    declarations: [
-        AppComponent,
-        ListComponent,
-        AddComponent,
-        HomeComponent,
-        DetailsComponent,
-        NavComponent,
-        UpdateComponent
-    ],
     imports: [
-        BrowserModule.withServerTransition({ appId: 'serverApp' }),
+        
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
         ModalModule.forRoot(),
-        CommonModule,
-        TransferHttpCacheModule,
-        NgtUniversalModule
+        AppModule,
+        BrowserTransferStateModule
     ],
     providers: [],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppBrowserModule { }
