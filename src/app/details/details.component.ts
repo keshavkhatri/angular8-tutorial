@@ -35,4 +35,7 @@ export class DetailsComponent implements OnInit {
         )
     }
 
+    delete(){
+        // TODO: Implement Delete functionality
+    }
 }

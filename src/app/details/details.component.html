@@ -6,7 +6,9 @@
     <div class="row" *ngIf="!loading">
         <div class="card mt-4">
             <div class="card-header text-center">
+                <a class="btn btn-outline-primary float-left" [routerLink]="['/update',emp.id]">Edit</a>
                 Employee Details
+                <a class="btn btn-outline-primary float-right" (click)="delete()">Delete</a>
             </div>
             <div class="card-body">
                 <h5 class="card-title">Name: {{emp?.employee_name}}</h5>

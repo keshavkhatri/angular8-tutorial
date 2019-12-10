@@ -11,6 +11,7 @@ import { AddComponent } from './add/add.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { NavComponent } from './nav/nav.component';
+import { UpdateComponent } from './update/update.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -18,7 +19,8 @@ import { NavComponent } from './nav/nav.component';
         AddComponent,
         HomeComponent,
         DetailsComponent,
-        NavComponent
+        NavComponent,
+        UpdateComponent
     ],
     imports: [
         BrowserModule,

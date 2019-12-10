@@ -23,4 +23,8 @@ export class ApiService {
     createEmp(data){
         return this.http.post(this.apiRoot +'create',data);
     }
+
+    updateEmp(id,data){
+        return this.http.put(this.apiRoot +'update/'+id,data);
+    }
 }

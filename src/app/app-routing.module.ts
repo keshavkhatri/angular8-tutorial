@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { AddComponent } from './add/add.component';
 import { DetailsComponent } from './details/details.component';
+import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
     {
@@ -21,6 +22,10 @@ const routes: Routes = [
     {
         path: 'details/:id',
         component: DetailsComponent
+    },
+    {
+        path: 'update/:id',
+        component: UpdateComponent
     }
 ];
 
